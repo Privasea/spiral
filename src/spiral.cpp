@@ -1492,7 +1492,7 @@ double check_final(FurtherDimsLocals furtherDimsLocals, bool modswitch_on_server
     // cop(M_result, r_end);//, 0, 1);
 
     cout << "Is correct?: " << is_eq(corr, M_result) << endl;
-    cout <<"****====="<<corr<<M_result<<endl;
+    cout <<"****====="<<corr.data<<M_result.data<<endl;
     if (show_diff) {
         for (size_t i = 0; i < M_result.rows * M_result.cols * coeff_count; i++) {
             if (corr.data[i] != M_result.data[i]) {
